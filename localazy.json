@@ -1,10 +1,11 @@
 {
   "upload": {
+    "deprecateMissing": true,
+    "type": "json",
     "files": [
       {
         "pattern": "locales/ar.json",
         "lang": "inherited",
-        "type": "json",
         "path": "src/locales/",
         "file": "{lang}.json",
         "features": [
@@ -18,7 +19,6 @@
           "locales/ar.json"
         ],
         "lang": "${autodetectLang}",
-        "type": "json",
         "path": "src/locales/",
         "file": "{lang}.json",
         "features": [
