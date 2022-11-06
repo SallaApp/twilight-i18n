@@ -68,11 +68,13 @@ For any Twilight Theme, the  internationalization files are located in the local
 The internationalization file is a JSON string file that consists of a list of key-value pairs, e.g. `"Key":"Value"`:
 ```js
 {
-  "common": {
-    "remember_my_choice": "Remember my choice",
-    "note": "Note",
-    "country_code":"country code" 
-  },
+  "errors": {
+    "404": "٤٠٤ الصفحة غير موجودة",
+    "failed_to_add_into_wishlist": "تعذر الإحتفاظ بالمنتج في قائمة الأمنيات!",
+    "not_less_than_chars": "بما لا يقل عن :chars أحرف",
+    "error_occurred": "حصل خطأ غير متوقع، يرجى إعادة المحاولة",
+    "field_required": "الحقل :attribute مطلوب"
+  }
 }
 ```
 For retrieving the translation strings, the developer can simply use the default [Twig](https://twig.symfony.com/) helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
@@ -80,19 +82,14 @@ For retrieving the translation strings, the developer can simply use the default
 - Simple key: 
 ```js
 <!-- simple key -->
-<span>{{ trans('common.remember_my_choice') }}</span>
+<span>{{ trans('common.errors.field_required') }}</span>
 ```
 
-- Key with variable:
-```js
-<!-- key with variable -->
-<span>{{ trans('blocks.header.cart', ['word' => 'Products']) }}</span>
-```
 - Key with enforced locale/language:
 ```js
 <!-- key with enforced locale/language -->
 <!-- this will always print the result of key in English even if the store has different default language -->
-<span>{{ trans('common.titles.orders', [], en) }}</span>
+<span>{{ trans('common.errors.error_occurred', [], en) }}</span>
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
