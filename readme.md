@@ -1,3 +1,4 @@
+
 <div id="top"></div>
 <br />
 <div align="center"> 
@@ -24,6 +25,7 @@ Developing your <a href="https://docs.salla.dev/docs/twilight-themes-documentati
 <ul>
 <li><a  href="#upload">Download</a></li>
 <li><a  href="#download">Upload</a></li>
+<li><a  href="#translation-retrieval">Translation retrieval</a></li>
 </ul>
 </li>
 
@@ -62,7 +64,26 @@ For any Twilight Theme, the  internationalization files are located in the local
 
 > The developer has the option to add more text to his translation files, as well as update and give translation. This better supports his own special needs.
 
+### Translation retrieval
+For retrieving the translation strings, the developer can simply use the default helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
 
+- Simple key: 
+```js
+<!-- simple key -->
+<span>{{ trans('common.remember_my_choice') }}</span>
+```
+
+- Key with variable:
+```js
+<!-- key with variable -->
+<span>{{ trans('blocks.header.cart', ['word' => 'Products']) }}</span>
+```
+- Key with enforced locale/language:
+```js
+<!-- key with enforced locale/language -->
+<!-- this will always print the result of key in English even if the store has different default language -->
+<span>{{ trans('common.titles.orders', [], en) }}</span>
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
