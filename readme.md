@@ -7,7 +7,7 @@
   </a>
   <h1 align="center">Twilight i18n</h1>
   <p align="center">
-Developing your <a href="https://docs.salla.dev/docs/twilight-themes-documentation">Twilight Theme</a>   to support multiple languages is known as internationalization, or i18n (18 letters separate the i and n). Twilight i18n provides you with access to translations that are already made for your Twilight Theme. 
+Developing your <a href="https://docs.salla.dev/docs/twilight-themes-documentation">Twilight Theme</a>   to support multiple languages is known as internationalization, or i18n (18 letters separate the i and n). Twilight i18n provides you with access to translations that are ready made for your Twilight Theme. 
     <br />
     <a href="https://salla.dev/"><strong>Explore our blogs »</strong></a>
     <br />
