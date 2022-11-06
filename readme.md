@@ -57,15 +57,25 @@ Following is the location of the internationalization files within a Twilight Th
 The developer can simply use this [Twilight i18n](https://github.com/SallaApp/twilight-i18n/tree/master/locales) to extend or update the given translation comes with the Twilight default theme.
 
 ### Download
-By browsing the folder [Twilight i18n](https://github.com/SallaApp/twilight-i18n/tree/master/locales), the developer may download the language translations that he wants to support in his theme. 
+By browsing the folder [Twilight i18n](https://github.com/SallaApp/twilight-i18n/tree/master/locales), the developer may download the language translations file that he wants to support in his theme. 
 
 ### Upload 
-For any Twilight Theme, the  internationalization files are located in the locales directory [`src/locales/`](https://github.com/SallaApp/theme-raed/tree/master/src/locales), so simply the developer can upload to the path the translation file of the language he is supporting.
+For any Twilight Theme, the  internationalization files are located in the locales directory [`src/locales/`](https://github.com/SallaApp/theme-raed/tree/master/src/locales), so simply the developer can upload the translation file of the language he is supporting to this path .
 
-> The developer has the option to add more text to his translation files, as well as update and give translation. This better supports his own special needs.
+> The developer has the option to add more strings to his translation files as well as update any of the given translations. This is meant to give better support for the developer to meet his own special needs.
 
 ### Translation retrieval
-For retrieving the translation strings, the developer can simply use the default helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
+The internationalization file is a JSON string file that consists of a list of key-value pairs, e.g. `"Key":"Value"`:
+```js
+{
+  "common": {
+    "remember_my_choice": "Remember my choice",
+    "note": "Note",
+    "country_code":"country code" 
+  },
+}
+```
+For retrieving the translation strings, the developer can simply use the default [Twig](https://twig.symfony.com/) helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
 
 - Simple key: 
 ```js
