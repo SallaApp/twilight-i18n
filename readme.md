@@ -68,21 +68,32 @@ For any Twilight Theme, the  internationalization files are located in the local
 The internationalization file is a JSON string file that consists of a list of key-value pairs, e.g. `"Key":"Value"`:
 ```js
 {
-  "errors": {
-    "404": "٤٠٤ الصفحة غير موجودة",
-    "failed_to_add_into_wishlist": "تعذر الإحتفاظ بالمنتج في قائمة الأمنيات!",
-    "not_less_than_chars": "بما لا يقل عن :chars أحرف",
-    "error_occurred": "حصل خطأ غير متوقع، يرجى إعادة المحاولة",
-    "field_required": "الحقل :attribute مطلوب"
+  "common": {
+    "titles": {
+      "home": "الرئيسية"
+    },
+    "errors": {
+      "404": "٤٠٤ الصفحة غير موجودة",
+      "failed_to_add_into_wishlist": "تعذر الإحتفاظ بالمنتج في قائمة الأمنيات!",
+      "error_occurred": "حصل خطأ غير متوقع، يرجى إعادة المحاولة",
+      "field_required": "الحقل :attribute مطلوب"
+    }
   }
 }
+
 ```
 For retrieving the translation strings, the developer can simply use the default [Twig](https://twig.symfony.com/) helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
 
 - Simple key: 
 ```js
 <!-- simple key -->
-<span>{{ trans('common.errors.field_required') }}</span>
+<span>{{ trans('common.titles.home') }}</span>
+```
+
+- Key with variable:
+```js
+<!-- key with variable -->
+<span>{{ trans('common.errors.field_required', ['attribute ' => 'البريد']) }}</span>
 ```
 
 - Key with enforced locale/language:
