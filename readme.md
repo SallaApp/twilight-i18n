@@ -58,6 +58,7 @@ The developer can simply use this [Twilight i18n](https://github.com/SallaApp/tw
 
 ### Download
 By browsing the folder [Twilight i18n](https://github.com/SallaApp/twilight-i18n/tree/master/locales), the developer may download the language translations file that he wants to support in his theme. 
+> You can find a complete list of all the language translation files supported by Twilight [here](https://localazy.com/p/twilight).
 
 ### Upload 
 For any Twilight Theme, the  internationalization files are located in the locales directory [`src/locales/`](https://github.com/SallaApp/theme-raed/tree/master/src/locales), so simply the developer can upload the translation file of the language he is supporting to this path .
