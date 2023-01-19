@@ -332,6 +332,7 @@
       "sessions_count": "عدد الجلسات",
       "session_duration": "وقت الجلسة",
       "seats_count": "عدد المقاعد",
+      "available_seats": "العدد المُتاح",
       "reservation_details": "معلومات الحجز",
       "reservations": "الحجوزات",
       "full": "مكتمل",
