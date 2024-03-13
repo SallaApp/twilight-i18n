@@ -7,12 +7,12 @@
   </a>
   <h1 align="center">Twilight i18n</h1>
   <p align="center">
-Developing your <a href="https://docs.salla.dev/docs/twilight-themes-documentation">Twilight Theme</a>   to support multiple languages is known as internationalization, or i18n (18 letters separate the i and n). Twilight i18n provides you with access to translations that are ready made for your Twilight Theme. 
+Developing your <a href="https://docs.salla.dev/?nav=01HNFTD5Y5ESFQS3P9MJ0721VM">Twilight Theme</a>  to support multiple languages is known as internationalization, or i18n (18 letters separate the i and n). Twilight i18n provides you with access to translations that are ready made for your Twilight Theme. 
     <br />
     <a href="https://salla.dev/"><strong>Explore our blogs »</strong></a>
     <br />
     <a href="https://github.com/SallaApp/twilight-i18n/issues/new">Report Bug</a> · 
-    <a href="https://github.com/SallaApp/twilight-i18n/discussions/new">Request Feature</a> . <a href="https://t.me/salladev">&lt;/Salla Developers&gt;</a> . <a href="https://docs.salla.dev/docs/twilight-themes-documentation">Official Documentation</a> 
+    <a href="https://github.com/SallaApp/twilight-i18n/discussions/new">Request Feature</a> . <a href="https://t.me/salladev">&lt;/Salla Developers&gt;</a> . <a href="https://docs.salla.dev/?nav=01HNFTD5Y5ESFQS3P9MJ0721VM">Official Documentation</a> 
   </p>
 </div>
 
@@ -39,7 +39,7 @@ Developing your <a href="https://docs.salla.dev/docs/twilight-themes-documentati
 <br>
 
 ## Overview
-The internationalization feature of Twilight Themes makes it easy to pull out strings in other languages, because it involves separating the texts from the code. This makes it easy for Salla theme developers to support multiple languages. The internationalization files, which are JSON based files, are located in the locales directory [`src/locales/`](https://github.com/SallaApp/theme-raed/tree/master/src/locales) and are used to define translation strings. This directory contains a JSON file for each language supported by the Twilight Theme. For applications with a large number of translatable strings, this strategy is recommended.
+The internationalization feature of Twilight Themes makes it easy to pull out strings in other languages, because it involves separating the texts from the code. This makes it easy for Salla theme developers to support multiple languages. The internationalization files, which are JSON-based files, are located in the locales directory [`src/locales/`](https://github.com/SallaApp/theme-raed/tree/master/src/locales) and are used to define translation strings. This directory contains a JSON file for each language supported by the Twilight Theme. For applications with a large number of translatable strings, this strategy is recommended.
 
 Following is the location of the internationalization files within a Twilight Theme:
 
@@ -83,7 +83,7 @@ The internationalization file is a JSON string file that consists of a list of k
 }
 
 ```
-For retrieving the translation strings, the developer can simply use the default [Twig](https://twig.symfony.com/) helper [trans()](https://salla.stoplight.io/docs/twilight-themes-documentation/afad4e4ff0cda-twilight-flavoured-twig#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
+For retrieving the translation strings, the developer can simply use the default [Twig](https://twig.symfony.com/) helper [trans()](https://docs.salla.dev/doc-421929/?nav=01HNFTD5Y5ESFQS3P9MJ0721VM#trans) function. This helper translates the passed key to the current store language. Retrieving the translation can be done in deafferent ways:
 
 - Simple key: 
 ```js
@@ -108,7 +108,7 @@ For retrieving the translation strings, the developer can simply use the default
 
 ## Support
 
-The team is always here to help you. Happen to face an issue? Want to report a bug? You can submit one here on Github using the [Issue Tracker](https://github.com/SallaApp/theme-raed/issues/new). If you still have any questions, please contact us via the [Telegram Bot](https://t.me/SallaSupportBot) or join in the Global Developer Community on [Telegram](https://t.me/salladev).
+The team is always here to help you. Happen to face an issue? Want to report a bug? You can submit one here on Github using the [Issue Tracker](https://github.com/SallaApp/theme-raed/issues/new). If you still have any questions, please contact us by joining the Global Developer Community on [Telegram](https://t.me/salladev) or via the [Support Email](mailto:support@salla.dev).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
